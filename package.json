@@ -28,12 +28,14 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "sinon": "^5.0.10",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
+    "fetch-mock": "^6.4.3",
     "jest-enzyme": "^6.0.1",
     "jest-styled-components": "^5.0.1",
-    "react-test-renderer": "^16.4.0"
+    "react-test-renderer": "^16.4.0",
+    "redux-mock-store": "^1.5.1",
+    "sinon": "^5.0.10"
   }
 }

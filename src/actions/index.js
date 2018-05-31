@@ -37,20 +37,19 @@ export function fetchData(page) {
     const apiKey = '5763846de30d489aa867f0711e2b031c';
     const q = 'Singapore';
 
-    axios
+    return axios
       .get(
         `https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${apiKey}&q=${q}&page=${page}`,
       )
-      .then(res => {
-        dispatch(getDataSuccess({ articles: res.data.response.docs, page: page }));
-      })
-      .catch(error => {
+      .then(res => res.data.response.docs)
+      .then(res => dispatch(getDataSuccess({ articles: res, page: page })))
+      .catch(error =>
         dispatch(
           getDataFailure({
             errorMessage: error.message,
             page: page,
           }),
-        );
-      });
+        ),
+      );
   };
 }
