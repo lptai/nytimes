@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error message and retry button are shown 1`] = `
+<Flex
+  flexDirection="column"
+  theme={
+    Object {
+      "breakpoints": Array [
+        "40em",
+        "52em",
+        "64em",
+      ],
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        96,
+        128,
+      ],
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+      ],
+    }
+  }
+>
+  <Flex
+    justifyContent="center"
+    mx="auto"
+    theme={
+      Object {
+        "breakpoints": Array [
+          "40em",
+          "52em",
+          "64em",
+        ],
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+          96,
+          128,
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+        ],
+      }
+    }
+  >
+    <p>
+      Could not fetch articles. 
+      Oops !!!
+    </p>
+  </Flex>
+  <Flex
+    justifyContent="center"
+    theme={
+      Object {
+        "breakpoints": Array [
+          "40em",
+          "52em",
+          "64em",
+        ],
+        "fontSizes": Array [
+          12,
+          14,
+          16,
+          20,
+          24,
+          32,
+          48,
+          64,
+          96,
+          128,
+        ],
+        "space": Array [
+          0,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+        ],
+      }
+    }
+  >
+    <button>
+      Retry
+    </button>
+  </Flex>
+</Flex>
+`;
