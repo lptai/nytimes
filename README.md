@@ -42,3 +42,26 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](#deployment) for more information.
+
+### [How to deploy on Heroku](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#heroku)
+
+[Deploying React with Zero Configuration](https://blog.heroku.com/deploying-react-with-zero-configuration)
+
+#### Quick Start
+
+Replace $APP_NAME with a name for your unique app.
+
+```shell
+create-react-app $APP_NAME
+cd $APP_NAME
+git init
+heroku create $APP_NAME --buildpack https://github.com/mars/create-react-app-buildpack.git
+git add .
+git commit -m "Start with create-react-app"
+# maybe need to set buildpack
+heroku buildpacks:set heroku/nodejs
+git push heroku master
+heroku open
+```
+
+[How to Deploy to Multiple Heroku Apps from the Same Git Repository](http://adampaxton.com/how-to-deploy-to-multiple-heroku-apps-from-the-same-git-repository/)
