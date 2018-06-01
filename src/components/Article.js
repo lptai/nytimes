@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Flex, Box } from 'grid-styled';
+import { Flex } from 'grid-styled';
 import { FormattedDate } from 'react-intl';
 import Modal from 'react-modal';
 import moment from 'moment';
@@ -107,7 +106,7 @@ class Article extends Component {
   };
 
   render() {
-    const { byline, headline, pub_date, multimedia, snippet, source, web_url } = this.props.article;
+    const { byline, headline, pub_date, multimedia, snippet, web_url } = this.props.article;
     const author = byline ? byline.original : '';
 
     // get thumbnail data

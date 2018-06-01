@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ListPagination from './../components/ListPagination';
-import pagination from './../reducers/pagination';
 import { fetchData } from './../actions';
 
 const mapStateToProps = state => {

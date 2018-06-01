@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { articles } from './../reducers';
 import ArticleList from './../components/ArticleList';
 import { fetchData } from './../actions';
 

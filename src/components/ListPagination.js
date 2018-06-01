@@ -61,10 +61,8 @@ const ListPagination = props => {
         onPageChange(page);
       };
       return (
-        <PageItem key={idx} className="" onClick={onPageClick} isCurrentPage={isCurrentPage}>
-          <a className="page-link" href="#">
-            {page + 1}
-          </a>
+        <PageItem key={idx} onClick={onPageClick} isCurrentPage={isCurrentPage}>
+          <a className="page-link">{page + 1}</a>
         </PageItem>
       );
     });
